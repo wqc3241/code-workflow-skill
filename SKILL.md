@@ -82,17 +82,17 @@ Before making ANY code change for a new feature or bug fix:
 
 ---
 
-## 8. Code Implementation via OpenAI Codex (MANDATORY)
+## 8. Code Implementation via OpenAI Codex 5.3 (MANDATORY)
 
 When it's time to actually write or modify code:
 
 1. **Check for OpenAI API key first.** Look for `OPENAI_API_KEY` in the environment or `.env` file.
    - If not found, ask the user to provide their OpenAI API key before proceeding.
    - Do NOT attempt to write code without it.
-2. **Use OpenAI Codex (via the OpenAI API) to generate the code.**
-   - Send a well-structured prompt to Codex describing exactly what code is needed, including context from the codebase (relevant files, function signatures, patterns).
-   - Use the best available code model (e.g., `gpt-4o` or `o3-mini`).
-3. **Review Codex output before applying.**
+2. **Use codeX 5.3 to write the code.**
+   - Send a well-structured prompt to codeX 5.3 describing exactly what code is needed, including context from the codebase (relevant files, function signatures, patterns).
+   - You MUST use the `codex-5.3` model. Do not fall back to other models.
+3. **Review codeX 5.3 output before applying.**
    - Never blindly paste generated code. Read it, verify it follows project conventions, and check for security issues.
    - Edit or regenerate if the output is not up to standard.
 4. **Integrate the generated code** into the project using Edit/Write tools.
